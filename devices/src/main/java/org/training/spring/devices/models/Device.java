@@ -40,4 +40,52 @@ public class Device {
     @NotBlank(message = "freshman field cannot be blank, empty or null")
     private String freshman;
 
+    public Long getId() {
+        return this.id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public TypeEnum getType() {
+        return this.type;
+    }
+
+    public void setType(TypeEnum type) {
+        this.type = type;
+    }
+
+    public StatusEnum getStatus() {
+        return this.status;
+    }
+
+    public void setStatus(StatusEnum status) {
+        this.status = status;
+    }
+
+    public LocalDate getPurchasingDate() {
+        return this.purchasingDate;
+    }
+
+    public void setPurchasingDate(LocalDate purchasingDate) {
+        this.purchasingDate = purchasingDate;
+    }
+
+    public String getFreshman() {
+        return this.freshman;
+    }
+
+    public void setFreshman(String freshman) {
+        this.freshman = freshman;
+    }
+
 }

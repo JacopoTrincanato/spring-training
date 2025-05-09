@@ -7,5 +7,8 @@ import org.training.spring.devices.enums.TypeEnum;
 import org.training.spring.devices.models.Device;
 
 public interface DeviceRepository extends JpaRepository<Device, Long> {
-    public List<Device> findByNameorType(String name, TypeEnum type);
+    List<Device> findByNameContainingIgnoreCase(String name);
+
+    List<Device> findByType(TypeEnum type);
+
 }
